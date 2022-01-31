@@ -1,0 +1,24 @@
+<div class="pageStyle">
+    <div class="formStyle">
+        <h4>Online Banking</h4>
+        <br>
+        <label class="textFormat">User name : </label>
+        <input type="text" name="userName" [(ngModel)]="userDetail.username">
+        <br><br>
+        <label class="textFormat">Password :</label>
+        <input type="password" name="password" [(ngModel)]="userDetail.password">
+        <br><br>
+        <label class="textFormat">Confirm Password :</label>
+        <input type="password" name="password">
+        <br><br>
+        <label class="textFormat">Account number :</label>
+        <input type="text" name="accountNumber" [(ngModel)]="userDetail.accountNumber">
+        <br><br>
+        <label class="textFormat">IFSC code :</label>
+        <input type="text" name="ifscCode" [(ngModel)]="userDetail.ifscCode">
+        <br><br>
+        <button type="submit" class="btn btn-primary" (click)="register()">Register</button> &nbsp;
+        <button type="reset" class="btn btn-secondary">Cancel</button>
+        <br><br>
+    </div>
+</div>

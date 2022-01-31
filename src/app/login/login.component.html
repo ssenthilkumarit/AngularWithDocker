@@ -1,0 +1,24 @@
+<div class="pageStyle">
+    <div class="formStyle">
+        <h4>Online Banking</h4>
+        <br>
+        <label *ngIf="!registeredUser && isNew" style="color: red;" >You are not registered. Please click on the "register" link to register.</label>
+        <br>
+        User name :
+        <input type="text" name="userName" name="username" [(ngModel)]="user.username">
+        <br>
+        <label *ngIf="!isValid" style="color: red;" >Please enter User name</label>
+        <br><br>
+        Password :
+        <input type="password" name="password"  name="password" [(ngModel)]="user.password">
+        <br>
+        <label *ngIf="!isValid" style="color: red;">Please enter Password</label>
+        <br><br>
+        <button type="submit" class="btn btn-primary" (click)="goToHome()">Submit</button> &nbsp;
+        <button type="reset" class="btn btn-secondary" (click)="reloadPage()">Cancel</button>
+        <br><br>
+        <div>
+            New User? Please click here to register.<a href="/register" >Register</a>
+        </div>
+    </div>
+</div>
